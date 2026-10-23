@@ -1,0 +1,61 @@
+ html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Home page hero styles */
+.home-hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #e6f0ff 100%);
+  padding: 4rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(16,24,40,0.06);
+  margin: 2rem auto;
+}
+
+.home-hero .display-4 {
+  font-weight: 700;
+  color: #0b5ed7;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.home-hero p {
+  color: #475569;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .home-hero { padding: 6rem 2rem; }
+  .home-hero p { font-size: 1.15rem; }
+}
+
+/* Small tweaks for footer spacing */
+footer.footer { padding: 1.25rem 0; }
